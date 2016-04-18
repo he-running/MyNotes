@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MyNotes</string>
+    <string name="addNote">添加日志</string>
+    <string name="save">保存</string>
+    <string name="cancle">取消</string>
+    <string name="photo">拍照</string>
+    <string name="video">录像</string>
 </resources>
