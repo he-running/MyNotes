@@ -1,13 +1,13 @@
 package com.mynotes;
 
+import android.app.Activity;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 
 import java.io.File;
 
-public class AtyPhotoViewer extends AppCompatActivity {
+public class AtyPhotoViewer extends Activity {
 
     private ImageView iv;
     public static final String EXTRA_PATH="path";
@@ -21,7 +21,6 @@ public class AtyPhotoViewer extends AppCompatActivity {
 
         String path=getIntent().getStringExtra(EXTRA_PATH);
         if (path!=null){
-
             iv.setImageURI(Uri.fromFile(new File(path)));
         }else{
             finish();
